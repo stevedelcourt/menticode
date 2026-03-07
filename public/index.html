@@ -95,6 +95,7 @@
 
   <!-- HERO -->
   <section class="hero">
+    <img class="hero-bg" id="hero-bg" src="/menti1.webp" alt="">
     <div class="container hero-content">
       <p class="hero-eyebrow">INGÉNIERIE LOGICIELLE · IA & AGENTS SOUVERAINS · 100 % FRANÇAIS · DEPUIS 2022</p>
       <h1>
@@ -647,8 +648,7 @@
     (function() {
       var images = ['/menti1.webp', '/menti2.webp', '/menti3.webp'];
       var randomImage = images[Math.floor(Math.random() * images.length)];
-      var hero = document.querySelector('.hero');
-      hero.style.backgroundImage = 'url(' + randomImage + ')';
+      document.getElementById('hero-bg').src = randomImage;
     })();
   </script>
 </body>
