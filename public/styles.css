@@ -324,11 +324,27 @@ button {
   justify-content: center;
   padding-top: var(--nav-height);
   position: relative;
-  background: var(--color-black);
+  background-color: var(--color-black);
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   color: var(--color-cream);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 6, 6, 0.7);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-eyebrow {

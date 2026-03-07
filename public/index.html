@@ -647,7 +647,8 @@
     (function() {
       var images = ['/menti1.webp', '/menti2.webp', '/menti3.webp'];
       var randomImage = images[Math.floor(Math.random() * images.length)];
-      document.querySelector('.hero').style.backgroundImage = 'url(' + randomImage + ')';
+      var hero = document.querySelector('.hero');
+      hero.style.backgroundImage = 'url(' + randomImage + ')';
     })();
   </script>
 </body>
