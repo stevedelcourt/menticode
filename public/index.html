@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menticode — Ingénierie logicielle, IA souveraine et agents intelligents. Équipe 100% française, projets critiques en production.">
+  <title>Menticode — Projets critiques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,300;1,9..40,400;1,9..40,700&family=Libre+Franklin:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .hero-eyebrow {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: heroFadeIn 0.6s ease forwards;
+      animation-delay: 0.2s;
+    }
+    .hero h1 .word {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(60px);
+      animation: fadeInWord 0.6s var(--ease-out-expo) forwards;
+    }
+    .hero h1 .word:nth-child(1) { animation-delay: 0.3s; }
+    .hero h1 .word:nth-child(2) { animation-delay: 0.5s; }
+    .hero h1 .word:nth-child(3) { animation-delay: 0.7s; }
+    @keyframes fadeInWord {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-subtitle {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: heroFadeIn 0.6s ease forwards;
+      animation-delay: 0.7s;
+    }
+    .hero-ctas {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: heroFadeIn 0.6s ease forwards;
+      animation-delay: 0.9s;
+    }
+    @keyframes heroFadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Menticode</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#expertises">Expertises</a></li>
+          <li><a href="#secteurs">Secteurs</a></li>
+          <li><a href="#method">Méthode</a></li>
+          <li><a href="#results">Résultats</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Parlons de votre projet</a>
+        <button class="menu-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Fermer le menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <ul class="mobile-nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#expertises">Expertises</a></li>
+      <li><a href="#secteurs">Secteurs</a></li>
+      <li><a href="#method">Méthode</a></li>
+      <li><a href="#results">Résultats</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-cta">
+      <a href="#contact" class="btn btn-primary">Parlons de votre projet</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="hero-eyebrow">INGÉNIERIE LOGICIELLE · IA & AGENTS SOUVERAINS · 100 % FRANÇAIS · DEPUIS 2022</p>
+      <h1>
+        <span class="word">Vos</span> <span class="word">projets</span> <span class="word accent">critiques</span> <span class="word">méritent</span> <span class="word">une</span> <span class="word">équipe</span> <span class="word">qui</span> <span class="word accent">reste.</span>
+      </h1>
+      <p class="hero-subtitle">Une petite équipe d'ingénieurs seniors, française de bout en bout — qui comprend vos contraintes, construit ce dont vous avez besoin, et est encore là six mois après la mise en prod.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Parlons de votre projet</a>
+        <a href="#expertises" class="btn btn-outline">Découvrir nos expertises</a>
+      </div>
+    </div>
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>IA Souveraine · Agents IA · MCP & Function Calling · LLM on-premise · Cloud français · Cybersécurité · RGPD · DORA · NIS2 · EU AI Act · Fintech · Data Engineering · Infrastructure · Learning Systems · VR/AR ·</span>
+        <span>IA Souveraine · Agents IA · MCP & Function Calling · LLM on-premise · Cloud français · Cybersécurité · RGPD · DORA · NIS2 · EU AI Act · Fintech · Data Engineering · Infrastructure · Learning Systems · VR/AR ·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES -->
+  <section class="numbers" id="numbers">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">En chiffres.</p>
+      </div>
+      <div class="numbers-grid">
+        <div class="number-item reveal">
+          <div class="number-value" data-count="40">0</div>
+          <div class="number-label">projets en production</div>
+        </div>
+        <div class="number-item reveal">
+          <div class="number-value" data-count="20">0</div>
+          <div class="number-label">organisations accompagnées</div>
+        </div>
+        <div class="number-item reveal">
+          <div class="number-value" data-count="91">0</div>
+          <div class="number-label">NPS moyen</div>
+        </div>
+        <div class="number-item reveal">
+          <div class="number-value" data-count="0" data-suffix="%">0</div>
+          <div class="number-label">données hébergées hors de France</div>
+        </div>
+      </div>
+      <p class="numbers-note">Nos clients peuvent en témoigner — n'hésitez pas à leur demander.</p>
+    </div>
+  </section>
+
+  <!-- QUI ON EST -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">À propos</p>
+        <h2 class="section-title">Une équipe à taille humaine qui prend les projets au sérieux.</h2>
+        <p class="section-subtitle">On est une petite équipe d'ingénieurs qui aime les problèmes difficiles. On ne prend pas plus de projets qu'on ne peut en suivre correctement — c'est un choix délibéré.</p>
+      </div>
+      <div class="about-content reveal">
+        <p>Depuis 2022, on accompagne des organisations françaises sur leurs projets d'ingénierie les plus critiques : IA souveraine, transformation de SI, conformité réglementaire, infrastructure de production. On code, on déploie, on reste.</p>
+        <p>Tout se passe en France. Les données, le code, les équipes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Services</p>
+        <h2 class="section-title">Du cadrage à la production — sans disparaître entre les deux.</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <h3 class="service-title">Conseil & Cadrage</h3>
+          <p class="service-accent">On essaie de comprendre votre situation avant de proposer quoi que ce soit.</p>
+          <ul class="card-list">
+            <li>Stratégie IA et feuille de route d'adoption</li>
+            <li>Architecture de systèmes IA responsables (EU AI Act, gouvernance)</li>
+            <li>Cadrage réglementaire : RGPD, DORA, NIS2, HDS, ISO 27001</li>
+            <li>Audit de maturité numérique et modernisation SI</li>
+            <li>Conduite du changement</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <h3 class="service-title">Ingénierie & Développement</h3>
+          <p class="service-accent">Ce qu'on livre tient en prod — pas seulement le jour de la démo.</p>
+          <ul class="card-list">
+            <li>Agents IA métiers et automatisation de processus</li>
+            <li>Applications et plateformes sur-mesure</li>
+            <li>LLM on-premise et intégrations MCP / function calling</li>
+            <li>Cloud souverain (OVHcloud, Scaleway, SecNumCloud)</li>
+            <li>Cloud hyperscaler région France (AWS Paris, GCP Paris)</li>
+            <li>Cybersécurité : audit, durcissement, IAM, SOC managé</li>
+            <li>Infrastructure haute disponibilité, observabilité, CI/CD</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <h3 class="service-title">Solutions & Intégrations</h3>
+          <p class="service-accent">Les bons outils, bien intégrés à votre réalité — pas une solution générique rebadgée.</p>
+          <ul class="card-list">
+            <li>Plateformes enterprise : SAP, Salesforce, ServiceNow</li>
+            <li>Data engineering, analytique avancée, MLOps</li>
+            <li>Intégrations fintech et paiement</li>
+            <li>Value Added Reseller sur solutions certifiées</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISES -->
+  <section class="expertises" id="expertises">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Expertises</p>
+        <h2 class="section-title">Quatre domaines où on a de la profondeur.</h2>
+        <p class="section-subtitle">Construite sur des projets réels, pas sur des slides de certification.</p>
+      </div>
+      <div class="expertises-grid">
+        <div class="card reveal">
+          <span class="card-number">01</span>
+          <h3 class="card-title">IA Souveraine & Agents Intelligents</h3>
+          <p class="card-body">L'IA, ça s'ingénie. On conçoit des agents qui s'intègrent à vos systèmes, respectent vos règles métiers, tournent sur votre propre infrastructure — et dont les décisions sont traçables.</p>
+          <ul class="card-list">
+            <li>LLM on-premise souverains : Mistral self-hosted, vLLM, Ollama — vos données restent chez vous</li>
+            <li>Agents IA métiers autonomes et semi-autonomes (LangGraph, CrewAI, AutoGen)</li>
+            <li>Orchestration multi-agents et workflows complexes</li>
+            <li>Intégrations MCP (Model Context Protocol) et function calling sur vos APIs internes</li>
+            <li>RAG sur bases documentaires internes (Qdrant, pgvector, Weaviate)</li>
+            <li>Sécurité IA : guardrails, audit de modèles, red teaming, conformité EU AI Act</li>
+            <li>MLOps, monitoring de dérive, gouvernance et traçabilité des décisions IA</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Mistral self-hosted</span>
+            <span class="tag">vLLM</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">LangGraph</span>
+            <span class="tag">CrewAI</span>
+            <span class="tag">AutoGen</span>
+            <span class="tag">MCP</span>
+            <span class="tag">Qdrant</span>
+            <span class="tag">pgvector</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <span class="card-number">02</span>
+          <h3 class="card-title">Fintech & Paiement</h3>
+          <p class="card-body">En finance, les erreurs de prod coûtent cher — en argent, en conformité, en confiance. On construit des architectures pensées pour durer et pour satisfaire les régulateurs.</p>
+          <ul class="card-list">
+            <li>Plateformes de paiement conformes PCI-DSS, PSD2 et PSD3</li>
+            <li>KYC / AML automatisé par agents IA</li>
+            <li>Reporting réglementaire temps réel (DORA, EMIR, Bâle IV)</li>
+            <li>Open Banking et API financières sécurisées</li>
+            <li>ISO 20022 et messagerie interbancaire</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Kafka</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">Adyen</span>
+            <span class="tag">Swan</span>
+            <span class="tag">PCI-DSS</span>
+            <span class="tag">PSD3</span>
+            <span class="tag">ISO 20022</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <span class="card-number">03</span>
+          <h3 class="card-title">VR / AR & Immersif</h3>
+          <p class="card-body">La réalité virtuelle change vraiment les choses pour la formation industrielle et médicale. Moins d'accidents, meilleure rétention, coûts réduits — on mesure tout ça avec vous.</p>
+          <ul class="card-list">
+            <li>Simulateurs VR sécurité industrielle et médicale</li>
+            <li>Configurateurs 3D produits B2B et retail</li>
+            <li>Serious games et parcours d'apprentissage immersifs</li>
+            <li>Déploiements multi-sites et gestion de flotte de casques</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">Unreal Engine</span>
+            <span class="tag">WebXR</span>
+            <span class="tag">Three.js</span>
+            <span class="tag">Meta Quest</span>
+            <span class="tag">HTC Vive</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <span class="card-number">04</span>
+          <h3 class="card-title">Learning Systems</h3>
+          <p class="card-body">Une plateforme de formation qui ne mesure rien ne preuve rien. On construit des LMS qui se connectent à vos outils, suivent l'impact réel et s'adaptent à vos apprenants.</p>
+          <ul class="card-list">
+            <li>LMS sur-mesure avec modules IA adaptatifs</li>
+            <li>Intégrations SIRH et conformité Qualiopi</li>
+            <li>Dashboards analytiques d'engagement et de complétion</li>
+            <li>Parcours hybrides, blended learning, SCORM / xAPI</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">SCORM</span>
+            <span class="tag">xAPI</span>
+            <span class="tag">Moodle</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTEURS -->
+  <section class="secteurs" id="secteurs" style="background: var(--color-black); color: var(--color-cream);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label" style="color: var(--color-orange);">Secteurs</p>
+        <h2 class="section-title">On connaît votre terrain.</h2>
+        <p class="section-subtitle" style="color: var(--color-ash);">Chaque secteur a ses contraintes, ses régulateurs, son vocabulaire. On ne découvre pas tout ça en arrivant sur votre projet.</p>
+      </div>
+      <div class="secteurs-grid reveal">
+        <div class="secteur-card">
+          <h3 class="secteur-title">Services financiers & Assurance</h3>
+          <p class="secteur-desc">Conformité DORA / PSD3, agents IA de traitement de dossiers, KYC/AML, modernisation de cores bancaires, open banking</p>
+        </div>
+        <div class="secteur-card">
+          <h3 class="secteur-title">Industrie & Manufacturing</h3>
+          <p class="secteur-desc">MES, jumeaux numériques, maintenance prédictive par IA, formation VR sécurité, IoT industriel, convergence OT/IT</p>
+        </div>
+        <div class="secteur-card">
+          <h3 class="secteur-title">Santé & Sciences de la Vie</h3>
+          <p class="secteur-desc">Hébergement HDS, interopérabilité HL7/FHIR, IA diagnostique, conformité MDR, dossier patient augmenté</p>
+        </div>
+        <div class="secteur-card">
+          <h3 class="secteur-title">Secteur public & Défense</h3>
+          <p class="secteur-desc">Souveraineté numérique, SI critiques, homologation ANSSI, SecNumCloud, dématérialisation de services</p>
+        </div>
+        <div class="secteur-card">
+          <h3 class="secteur-title">Énergie & Utilities</h3>
+          <p class="secteur-desc">Optimisation réseau par IA, jumeaux numériques, reporting ESG automatisé, maintenance prédictive</p>
+        </div>
+        <div class="secteur-card">
+          <h3 class="secteur-title">Télécoms & Médias</h3>
+          <p class="secteur-desc">Plateformes streaming, CDN, personnalisation IA, expériences immersives</p>
+        </div>
+        <div class="secteur-card">
+          <h3 class="secteur-title">Retail & Grande Consommation</h3>
+          <p class="secteur-desc">Configurateurs 3D, personnalisation client par IA, supply chain intelligente, omnicanal</p>
+        </div>
+        <div class="secteur-card">
+          <h3 class="secteur-title">Transport & Logistique</h3>
+          <p class="secteur-desc">Optimisation de flotte, tracking temps réel, prédiction de la demande, maintenance prédictive</p>
+        </div>
+      </div>
+      <p class="numbers-note" style="color: var(--color-ash); margin-top: var(--space-lg);">Votre secteur n'est pas dans la liste ? On a probablement déjà travaillé sur des contraintes similaires — parlez-nous de votre contexte.</p>
+      <div style="text-align: center; margin-top: var(--space-lg);">
+        <a href="#contact" class="btn btn-primary">Parlons de votre projet →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTHODE -->
+  <section class="method" id="method">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Méthode</p>
+        <h2 class="section-title">Comment on travaille, du premier appel à la mise en production.</h2>
+      </div>
+      <div class="method-steps">
+        <div class="method-step reveal">
+          <div class="step-number">01</div>
+          <p class="step-duration">1 à 2 semaines</p>
+          <h3 class="step-title">Audit & Cadrage</h3>
+          <p class="step-desc">On commence par écouter et comprendre — votre contexte technique, vos contraintes réglementaires, vos priorités métiers, vos risques réels. Avant de proposer quoi que ce soit.</p>
+          <p class="step-deliverable">Livrable : feuille de route priorisée, estimation de charge, plan de gouvernance, cartographie des risques.</p>
+        </div>
+        <div class="method-step reveal">
+          <div class="step-number">02</div>
+          <p class="step-duration">Cycles de 2 semaines</p>
+          <h3 class="step-title">Sprints & Livraisons</h3>
+          <p class="step-desc">Vous voyez le produit évoluer à chaque sprint. Pas un rapport. Pas une présentation. Le produit qui tourne.</p>
+          <p class="step-deliverable">Livrable : incréments fonctionnels testés, tableau de bord de suivi, compte-rendu de sprint.</p>
+        </div>
+        <div class="method-step reveal">
+          <div class="step-number">03</div>
+          <p class="step-duration">SLA contractuels</p>
+          <h3 class="step-title">Déploiement & Support</h3>
+          <p class="step-desc">Déploiement sur infrastructure française. Monitoring proactif, équipe dédiée. Vous parlez toujours aux mêmes personnes — celles qui connaissent le projet depuis le début.</p>
+          <p class="step-deliverable">Livrable : SLA documentés, runbooks, formation des équipes, transfert de compétences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉSULTATS -->
+  <section class="cases" id="results">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Résultats</p>
+        <h2 class="section-title">Ce qu'on a livré.</h2>
+        <p class="section-subtitle">Les noms restent confidentiels. Les résultats, eux, sont vérifiables.</p>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card reveal">
+          <p class="case-sector">Finance</p>
+          <p class="case-challenge">Défi : Plateforme de paiement vieillissante, coûts en hausse, mise en conformité PSD2 urgente.</p>
+          <p class="case-solution">Ce qu'on a fait : Migration vers microservices, API-first, conforme PSD2 — sans interruption de service.</p>
+          <div class="case-result">
+            <div class="result-value">–35%</div>
+            <div class="result-label">de coûts d'exploitation · Zéro incident sur 18 mois</div>
+          </div>
+        </div>
+        <div class="case-card reveal">
+          <p class="case-sector">Industrie</p>
+          <p class="case-challenge">Défi : Accidents liés à des formations sécurité trop théoriques, trop courtes, vite oubliées.</p>
+          <p class="case-solution">Ce qu'on a fait : Simulateur VR immersif déployé sur 4 sites en 5 mois.</p>
+          <div class="case-result">
+            <div class="result-value">–52%</div>
+            <div class="result-label">de temps de formation · –40% d'incidents</div>
+          </div>
+        </div>
+        <div class="case-card reveal">
+          <p class="case-sector">Assurance</p>
+          <p class="case-challenge">Défi : Conseillers submergés par le traitement manuel de dossiers complexes.</p>
+          <p class="case-solution">Ce qu'on a fait : Agents IA pour extraction documentaire, scoring automatisé, suggestion de réponse.</p>
+          <div class="case-result">
+            <div class="result-value">–25%</div>
+            <div class="result-label">de temps de traitement · +15 points NPS</div>
+          </div>
+        </div>
+        <div class="case-card reveal">
+          <p class="case-sector">Formation</p>
+          <p class="case-challenge">Défi : Cours hybrides post-COVID, aucun suivi de l'engagement étudiant.</p>
+          <p class="case-solution">Ce qu'on a fait : LMS sur-mesure avec analytics avancés et modules VR intégrés.</p>
+          <div class="case-result">
+            <div class="result-value">+60%</div>
+            <div class="result-label">de taux de complétion · ROI dès le 4e mois</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENTS -->
+  <section class="engagements" id="engagements">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Nos engagements</p>
+        <h2 class="section-title">Ce sur quoi vous pouvez compter.</h2>
+      </div>
+      <div class="engagements-grid">
+        <div class="engagement-card reveal">
+          <h3 class="engagement-title">Souveraineté totale</h3>
+          <p class="engagement-desc">Vos données restent en France. Vos projets aussi. Zéro sous-traitance offshore, zéro hébergement hors UE — et on peut le documenter : contrat, architecture, certifications.</p>
+        </div>
+        <div class="engagement-card reveal">
+          <h3 class="engagement-title">Les mêmes personnes du début à la fin</h3>
+          <p class="engagement-desc">L'équipe qui cadre votre projet est l'équipe qui le livre. Vous parlez toujours aux mêmes interlocuteurs, qui connaissent votre contexte.</p>
+        </div>
+        <div class="engagement-card reveal">
+          <h3 class="engagement-title">On livre tôt, on itère souvent</h3>
+          <p class="engagement-desc">Premier déploiement en moins de 3 semaines. On préfère mettre quelque chose entre vos mains rapidement et affiner ensemble plutôt que promettre la perfection dans six mois.</p>
+        </div>
+        <div class="engagement-card reveal">
+          <h3 class="engagement-title">Sécurité et conformité intégrées dès le départ</h3>
+          <p class="engagement-desc">RGPD, DORA, NIS2, ISO 27001, PCI-DSS, HDS, EU AI Act. Ce n'est pas une couche qu'on ajoute à la fin — c'est dans l'architecture dès le premier jour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Technologies</p>
+        <h2 class="section-title">Ce qu'on utilise en production.</h2>
+        <p class="section-subtitle">Ce qu'on maîtrise vraiment, sur des projets réels — pas une liste pour faire bonne impression.</p>
+      </div>
+      <div class="stack-grid reveal">
+        <div class="stack-category">
+          <p class="stack-category-title">IA & Agents</p>
+          <div class="stack-items">
+            <span class="stack-item">Mistral self-hosted</span>
+            <span class="stack-item">vLLM</span>
+            <span class="stack-item">Ollama</span>
+            <span class="stack-item">LangGraph</span>
+            <span class="stack-item">CrewAI</span>
+            <span class="stack-item">AutoGen</span>
+            <span class="stack-item">OpenAI</span>
+            <span class="stack-item">MCP</span>
+            <span class="stack-item">MLflow</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Sécurité IA & Gouvernance</p>
+          <div class="stack-items">
+            <span class="stack-item">Guardrails AI</span>
+            <span class="stack-item">Garak</span>
+            <span class="stack-item">EU AI Act</span>
+            <span class="stack-item">Red teaming IA</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Bases vectorielles & RAG</p>
+          <div class="stack-items">
+            <span class="stack-item">Qdrant</span>
+            <span class="stack-item">pgvector</span>
+            <span class="stack-item">Weaviate</span>
+            <span class="stack-item">Elasticsearch</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Cloud Souverain</p>
+          <div class="stack-items">
+            <span class="stack-item">OVHcloud</span>
+            <span class="stack-item">Scaleway</span>
+            <span class="stack-item">SecNumCloud</span>
+            <span class="stack-item">AWS Paris</span>
+            <span class="stack-item">GCP Paris</span>
+            <span class="stack-item">Terraform</span>
+            <span class="stack-item">Kubernetes</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Observabilité & Sécurité Infra</p>
+          <div class="stack-items">
+            <span class="stack-item">Prometheus</span>
+            <span class="stack-item">Grafana</span>
+            <span class="stack-item">Wazuh</span>
+            <span class="stack-item">HashiCorp Vault</span>
+            <span class="stack-item">Keycloak</span>
+            <span class="stack-item">Okta</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Fintech & Paiement</p>
+          <div class="stack-items">
+            <span class="stack-item">Stripe</span>
+            <span class="stack-item">Adyen</span>
+            <span class="stack-item">Swan</span>
+            <span class="stack-item">Bridge</span>
+            <span class="stack-item">Kafka</span>
+            <span class="stack-item">ISO 20022</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">VR / AR</p>
+          <div class="stack-items">
+            <span class="stack-item">Unity</span>
+            <span class="stack-item">Unreal Engine</span>
+            <span class="stack-item">WebXR</span>
+            <span class="stack-item">Three.js</span>
+            <span class="stack-item">Meta Quest</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Frontend</p>
+          <div class="stack-items">
+            <span class="stack-item">React</span>
+            <span class="stack-item">Next.js</span>
+            <span class="stack-item">TypeScript</span>
+            <span class="stack-item">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Backend & Data</p>
+          <div class="stack-items">
+            <span class="stack-item">Node.js</span>
+            <span class="stack-item">Python</span>
+            <span class="stack-item">FastAPI</span>
+            <span class="stack-item">Go</span>
+            <span class="stack-item">PostgreSQL</span>
+            <span class="stack-item">Redis</span>
+            <span class="stack-item">ClickHouse</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <p class="stack-category-title">Enterprise & Intégrations</p>
+          <div class="stack-items">
+            <span class="stack-item">SAP</span>
+            <span class="stack-item">Salesforce</span>
+            <span class="stack-item">ServiceNow</span>
+            <span class="stack-item">MuleSoft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info reveal">
+          <h3>Un projet en tête ? On est là.</h3>
+          <p>Pas de démo générique, pas de deck de 50 slides. Juste une conversation honnête sur votre contexte, ce que vous cherchez à résoudre, et si on peut vraiment vous aider.</p>
+          <div class="contact-direct">
+            <a href="mailto:hello@menticode.com" class="contact-email">hello@menticode.com</a>
+            <p class="contact-response">On répond sous 24h ouvrées.</p>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstname">Prénom</label>
+              <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Nom</label>
+              <input type="text" id="lastname" name="lastname" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email professionnel</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Société</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div class="form-group">
+            <label for="message">Votre projet en quelques lignes</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Envoyer →</button>
+          <p style="font-size: var(--text-xs); color: var(--color-ash); margin-top: var(--space-sm);">
+            En envoyant ce formulaire, vous acceptez notre <a href="/politique-confidentialite.html" style="text-decoration: underline;">Politique de confidentialité</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Menticode</div>
+          <p class="footer-tagline">Fait en France, avec soin.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="/mentions-legales.html">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="/cgv.html">CGV</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Menticode — Tous droits réservés.</p>
+        <p class="footer-copy">Menticode est une ESN française indépendante.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>
