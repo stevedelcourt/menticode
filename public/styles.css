@@ -497,7 +497,7 @@ section {
 
 .card-title {
   font-family: var(--font-display);
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: 700;
   margin-bottom: var(--space-sm);
 }
@@ -702,7 +702,7 @@ section {
 
 .service-title {
   font-family: var(--font-display);
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: 700;
   margin-bottom: var(--space-sm);
   color: var(--color-black);
@@ -711,7 +711,7 @@ section {
 
 .service-accent {
   font-family: var(--font-display);
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
   font-style: italic;
   color: white;
   opacity: 0.95;
@@ -953,11 +953,11 @@ section {
 
 .engagement-card {
   background: var(--color-cream);
-  padding: var(--space-lg);
+  padding: var(--space-sm);
   transition: all 0.3s var(--ease-out-expo);
   display: flex;
   flex-direction: column;
-  min-height: 220px;
+  min-height: auto;
 }
 
 .engagement-card:hover {

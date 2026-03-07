@@ -23,8 +23,10 @@
       animation: fadeInWord 0.6s var(--ease-out-expo) forwards;
     }
     .hero h1 .word:nth-child(1) { animation-delay: 0.3s; }
-    .hero h1 .word:nth-child(2) { animation-delay: 0.5s; }
-    .hero h1 .word:nth-child(3) { animation-delay: 0.7s; }
+    .hero h1 .word:nth-child(2) { animation-delay: 0.4s; }
+    .hero h1 .word:nth-child(3) { animation-delay: 0.5s; }
+    .hero h1 .word:nth-child(4) { animation-delay: 0.6s; }
+    .hero h1 .word:nth-child(5) { animation-delay: 0.7s; }
     @keyframes fadeInWord {
       to { opacity: 1; transform: translateY(0); }
     }
@@ -96,7 +98,7 @@
     <div class="container hero-content">
       <p class="hero-eyebrow">INGÉNIERIE LOGICIELLE · IA & AGENTS SOUVERAINS · 100 % FRANÇAIS · DEPUIS 2022</p>
       <h1>
-        <span class="word">Vos</span> <span class="word">projets</span> <span class="word accent">critiques</span> <span class="word">méritent</span> <span class="word">une</span> <span class="word">équipe</span> <span class="word">qui</span> <span class="word accent">reste.</span>
+        <span class="word">On</span> <span class="word">construit.</span> <span class="word">On</span> <span class="word">livre.</span> <span class="word accent">On</span> <span class="word accent">reste.</span>
       </h1>
       <p class="hero-subtitle">Une petite équipe d'ingénieurs seniors, française de bout en bout — qui comprend vos contraintes, construit ce dont vous avez besoin, et est encore là six mois après la mise en prod.</p>
       <div class="hero-ctas">
@@ -641,5 +643,12 @@
   </footer>
 
   <script src="/main.js"></script>
+  <script>
+    (function() {
+      var images = ['/menti1.webp', '/menti2.webp', '/menti3.webp'];
+      var randomImage = images[Math.floor(Math.random() * images.length)];
+      document.querySelector('.hero').style.backgroundImage = 'url(' + randomImage + ')';
+    })();
+  </script>
 </body>
 </html>
