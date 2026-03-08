@@ -1377,7 +1377,7 @@ section {
 
   .hero {
     min-height: 100vh;
-    padding-top: calc(var(--nav-height) + 10px);
+    padding-top: calc(var(--nav-height) - 30px);
     padding-bottom: 40px;
   }
 
