@@ -362,7 +362,7 @@ button {
   line-height: 1;
   letter-spacing: -0.02em;
   margin-bottom: var(--space-lg);
-  max-width: 16ch;
+  max-width: none;
   position: relative;
   color: var(--color-cream);
   display: block;
