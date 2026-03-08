@@ -341,6 +341,7 @@ button {
 .hero .container {
   position: relative;
   z-index: 1;
+  margin-left: 5%;
 }
 
 .hero-eyebrow {
@@ -1373,6 +1374,7 @@ section {
   .hero {
     background-position: 86% 103%;
     background-size: auto 100%;
+    padding-top: calc(var(--nav-height) + 20px);
   }
 
   .hero-bg {
