@@ -1379,8 +1379,14 @@ section {
     padding-bottom: 40px;
   }
 
+  .hero .container {
+    margin-left: 0;
+  }
+
   .hero-bg {
     transform: translateX(-10%);
+    width: 110%;
+    max-width: 110%;
   }
 
   .numbers-grid {
