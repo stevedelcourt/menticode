@@ -372,6 +372,11 @@ button {
   display: inline-block;
 }
 
+.hero h1 .word + br {
+  display: block;
+  margin-bottom: 0.1em;
+}
+
 .hero h1 .accent {
   color: var(--color-orange);
 }
@@ -1367,6 +1372,10 @@ section {
   .hero {
     background-position: 86% 103%;
     background-size: auto 100%;
+  }
+
+  .hero-bg {
+    transform: translateX(-10%);
   }
 
   .numbers-grid {
