@@ -1433,6 +1433,10 @@ section {
     display: none;
   }
 
+  .mobile-hidden {
+    display: none;
+  }
+
   .footer-inner {
     flex-direction: column;
     text-align: center;
