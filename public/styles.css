@@ -1416,6 +1416,10 @@ section {
     animation: none;
   }
 
+  .btn .desktop-text {
+    display: none;
+  }
+
   .footer-inner {
     flex-direction: column;
     text-align: center;
