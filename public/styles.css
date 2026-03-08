@@ -1374,7 +1374,9 @@ section {
   .hero {
     background-position: 86% 103%;
     background-size: auto 100%;
-    padding-top: calc(var(--nav-height) + 20px);
+    padding-top: calc(var(--nav-height) + 10px);
+    min-height: auto;
+    padding-bottom: 40px;
   }
 
   .hero-bg {
@@ -1408,6 +1410,11 @@ section {
   .hero h1 {
     font-size: clamp(48px, 15vw, 96px);
     display: block;
+    margin-bottom: var(--space-sm);
+  }
+
+  .hero-subtitle {
+    margin-bottom: var(--space-sm);
   }
 
   .hero h1 .word {
