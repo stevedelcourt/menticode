@@ -391,6 +391,10 @@ button {
   color: var(--color-cream);
 }
 
+.desktop-only {
+  display: inline;
+}
+
 .hero-ctas {
   display: flex;
   gap: var(--space-sm);
@@ -1434,6 +1438,10 @@ section {
   }
 
   .mobile-hidden {
+    display: none;
+  }
+
+  .desktop-only {
     display: none;
   }
 
