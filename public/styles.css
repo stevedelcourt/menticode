@@ -372,6 +372,12 @@ button {
   display: inline-block;
 }
 
+.hero h1 br {
+  display: block;
+  content: "";
+  margin-top: -0.1em;
+}
+
 .hero h1 .accent {
   color: var(--color-orange);
 }
